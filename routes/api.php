@@ -9,6 +9,7 @@ Route::apiResource('/users', UserController::class);
 // Route::get('/users/{id}', [UserController::class, 'show']);
 // Route::get('/users', [UserController::class, 'index']);
 // Route::post('/users', [UserController::class, 'store']);
+Route::get('/books', [App\Http\Controllers\BookController::class, 'index']);
 
 Route::get('/', function () {
     return response()->json([
