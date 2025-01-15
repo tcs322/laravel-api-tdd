@@ -17,8 +17,8 @@ class BookFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'price' => 10.00,
+            'name' => $this->faker->sentence(3),
+            'price' => $this->faker->numberBetween(10, 100),
         ];
     }
 }

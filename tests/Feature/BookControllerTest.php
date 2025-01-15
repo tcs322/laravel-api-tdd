@@ -9,6 +9,7 @@ use Tests\TestCase;
 
 class BookControllerTest extends TestCase
 {
+    use RefreshDatabase;
     /**
      * A basic feature test example.
      */
